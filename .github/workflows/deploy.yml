@@ -3,29 +3,41 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main  # deploy when main branch is updated
+      - main  # triggers deploy on main branch
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # Step 2: Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'  # or your preferred Node version
+          node-version: '20'
 
+      # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
+      # Step 4: Build React app (ignore CI warnings)
       - name: Build React app
         run: CI=false npm run build
 
+      # Step 5: Optional debug: list build folder contents
+      - name: Verify build output
+        run: ls -R build
+
+      # Step 6: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+          user_name: "github-actions[bot]"   # ensures git user is correct
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: "Deploy React app via GitHub Actions"
