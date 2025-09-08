@@ -11,15 +11,26 @@ function ProjectCards(props) {
         </Card.Text>
         {props.tags && props.tags.length > 0 && (
           <div className="hex-container">
-            {rows.map((row, rowIndex) => (
-              <div key={rowIndex} className="hex-row">
-                {row.map((tag) => (
-                  <div key={tag} className="hex">
-                    <img src={tagIconMap[tag]} alt={tag} />
-                  </div>
-                ))}
-              </div>
-            ))}
+            {(() => {
+              const tagsPerRow = 5;
+              const rows = [];
+              for (let i = 0; i < props.tags.length; i += tagsPerRow) {
+                rows.push(props.tags.slice(i, i + tagsPerRow));
+              }
+              return rows.map((row, rowIndex) => (
+                <div key={rowIndex} className="hex-row" style={{ marginLeft: rowIndex % 2 === 1 ? "25px" : "0" }}>
+                  {row.map((tag) => {
+                    const iconUrl = tagIconMap[tag];
+                    if (!iconUrl) return null;
+                    return (
+                      <div key={tag} className="hex">
+                        <img src={iconUrl} alt={tag} />
+                      </div>
+                    );
+                  })}
+                </div>
+              ));
+            })()}
           </div>
         )}
         <div style={{ height: "12px" }}></div>
