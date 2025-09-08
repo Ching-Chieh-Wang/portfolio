@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/profolio/static/css/main.0821b29a.css",
-    "main.js": "/profolio/static/js/main.254421cf.js",
-    "static/js/787.1ed0c42c.chunk.js": "/profolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/Matlab_Logo.png": "/profolio/static/media/Matlab_Logo.a428337692440fa03467.png",
-    "static/media/project-bg.jpg": "/profolio/static/media/project-bg.ecbbeaa947f9df954740.jpg",
-    "static/media/Leximind.png": "/profolio/static/media/Leximind.52ede0c1c6be6a0c84cb.png",
-    "static/media/youtube.png": "/profolio/static/media/youtube.4cb597b3483fb78a35c5.png",
-    "static/media/user.png": "/profolio/static/media/user.57249179afa74d235806.png",
-    "static/media/imageprocess.png": "/profolio/static/media/imageprocess.23214811e30a9fb38688.png",
-    "static/media/home-bg.jpg": "/profolio/static/media/home-bg.964aa7fe8c2559bdd2c3.jpg",
-    "static/media/codeEditor.png": "/profolio/static/media/codeEditor.1b585492490c8c1cace9.png",
-    "static/media/home-main.png": "/profolio/static/media/home-main.a87d9d36cbc3d7f6e9ae.png",
-    "static/media/avatar.jpeg": "/profolio/static/media/avatar.acea4f9e233b48475e9c.jpeg",
-    "static/media/bash.png": "/profolio/static/media/bash.a0d46e6cce62cd0e0697.png",
-    "static/media/jenkins.png": "/profolio/static/media/jenkins.a97af6807c801b7891b5.png",
-    "index.html": "/profolio/index.html",
-    "main.0821b29a.css.map": "/profolio/static/css/main.0821b29a.css.map",
-    "main.254421cf.js.map": "/profolio/static/js/main.254421cf.js.map",
-    "787.1ed0c42c.chunk.js.map": "/profolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.4489877a.css",
+    "main.js": "/portfolio/static/js/main.1fa8d9d3.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Matlab_Logo.png": "/portfolio/static/media/Matlab_Logo.a428337692440fa03467.png",
+    "static/media/project-bg.jpg": "/portfolio/static/media/project-bg.ecbbeaa947f9df954740.jpg",
+    "static/media/Leximind.png": "/portfolio/static/media/Leximind.52ede0c1c6be6a0c84cb.png",
+    "static/media/youtube.png": "/portfolio/static/media/youtube.4cb597b3483fb78a35c5.png",
+    "static/media/user.png": "/portfolio/static/media/user.57249179afa74d235806.png",
+    "static/media/imageprocess.png": "/portfolio/static/media/imageprocess.23214811e30a9fb38688.png",
+    "static/media/home-bg.jpg": "/portfolio/static/media/home-bg.964aa7fe8c2559bdd2c3.jpg",
+    "static/media/codeEditor.png": "/portfolio/static/media/codeEditor.1b585492490c8c1cace9.png",
+    "static/media/home-main.png": "/portfolio/static/media/home-main.a87d9d36cbc3d7f6e9ae.png",
+    "static/media/avatar.jpeg": "/portfolio/static/media/avatar.acea4f9e233b48475e9c.jpeg",
+    "static/media/bash.png": "/portfolio/static/media/bash.a0d46e6cce62cd0e0697.png",
+    "static/media/jenkins.png": "/portfolio/static/media/jenkins.a97af6807c801b7891b5.png",
+    "index.html": "/portfolio/index.html",
+    "main.4489877a.css.map": "/portfolio/static/css/main.4489877a.css.map",
+    "main.1fa8d9d3.js.map": "/portfolio/static/js/main.1fa8d9d3.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0821b29a.css",
-    "static/js/main.254421cf.js"
+    "static/css/main.4489877a.css",
+    "static/js/main.1fa8d9d3.js"
   ]
 }
