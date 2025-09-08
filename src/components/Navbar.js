@@ -36,7 +36,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand as={Link} to="/" onClick={() => updateExpanded(false)}>
           Ching-Chieh Wang's Profolio
         </Navbar.Brand>
         <Navbar.Toggle
