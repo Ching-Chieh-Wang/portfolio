@@ -36,10 +36,10 @@ function Techstack() {
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <img src={matlabLogo} style={{ width: "128px", height: "128px" }} />
+          <img alt="Matlab Logo" src={matlabLogo} style={{ width: "128px", height: "128px" }} />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <img src={bashLogo} style={{ width: "128px", height: "128px" }} />
+          <img alt="Bash Logo" src={bashLogo} style={{ width: "128px", height: "128px" }} />
         </Col>
       </Row>
 
@@ -115,7 +115,7 @@ function Techstack() {
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vault/vault-plain-wordmark.svg" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <img src={jenkinsLogo} style={{ width: "128px", height: "128px" }} />
+          <img alt="Jenkins Logo" src={jenkinsLogo} style={{ width: "128px", height: "128px" }} />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original-wordmark.svg" />
