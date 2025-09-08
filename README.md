@@ -1,6 +1,5 @@
 <h2 align="center">
   ChingChiehWang – Portfolio Website<br/>
-  <a href="https://xiuxiu-portfolio.vercel.app/" target="_blank">xiuxiu.dev</a>
 </h2>
 
 <img width="2510" height="1176" alt="image" src="https://github.com/user-attachments/assets/4ffd7a62-4dcd-4a31-90df-2df1ef70a2fb" />
@@ -11,11 +10,7 @@
   <img alt="Demo" src="./Images/readme-img1.png" />
 </div> -->
 
-<br/>
 
-<center>
-
-</center>
 
 <h3 align="center">
     🔹
