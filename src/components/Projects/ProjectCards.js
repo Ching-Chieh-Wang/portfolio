@@ -1,4 +1,5 @@
 import Card from "react-bootstrap/Card";
+import { Honeycomb, Hexagon } from 'react-honeycomb';
 
 function ProjectCards(props) {
   return (
@@ -9,30 +10,26 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        {props.tags && props.tags.length > 0 && (
-          <div className="hex-container">
-            {(() => {
-              const tagsPerRow = 5;
-              const rows = [];
-              for (let i = 0; i < props.tags.length; i += tagsPerRow) {
-                rows.push(props.tags.slice(i, i + tagsPerRow));
-              }
-              return rows.map((row, rowIndex) => (
-                <div key={rowIndex} className="hex-row" style={{ marginLeft: rowIndex % 2 === 1 ? "25px" : "0" }}>
-                  {row.map((tag) => {
-                    const iconUrl = tagIconMap[tag];
-                    if (!iconUrl) return null;
-                    return (
-                      <div key={tag} className="hex">
-                        <img src={iconUrl} alt={tag} />
-                      </div>
-                    );
-                  })}
-                </div>
-              ));
-            })()}
-          </div>
-        )}
+
+{props.tags && props.tags.length > 0 && (
+  <Honeycomb
+    columns={Math.ceil(Math.sqrt(props.tags.length))} // auto-adjust columns
+    size={50} // hex size
+    items={props.tags}
+    renderItem={(tag) => {
+      const iconUrl = tagIconMap[tag];
+      if (!iconUrl) return null;
+      return (
+       <Hexagon className="hex">
+        <img
+          src={iconUrl}
+          alt={tag}
+        />
+      </Hexagon>
+      );
+    }}
+  />
+)}
         <div style={{ height: "12px" }}></div>
         <ul className="project-links">
           {props.ghLink && 
@@ -111,11 +108,12 @@ const tagIconMap = {
   "Github": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg",
   "Githubactions": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original-wordmark.svg",
   "Vault": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vault/vault-plain-wordmark.svg",
-  "Jenkins": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original-wordmark.svg",
+  "Jenkins": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg",
   "GCP": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg",
   "AWS": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
   "OCI": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg",
   "Firebase": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg",
   "OpenCV": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original-wordmark.svg",
-  "FastAPI": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-plain-wordmark.svg"
+  "FastAPI": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-plain-wordmark.svg",
+  "Tensorflow": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
 };

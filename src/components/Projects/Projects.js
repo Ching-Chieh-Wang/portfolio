@@ -3,8 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import youtube from "../../Assets/Projects/youtube.png";
 import leximind from "../../Assets/Projects/Leximind.png";
-import image from "../../Assets/Projects/imageprocess.png";
-import editor from "../../Assets/Projects/codeEditor.png";
+import aruco_locating from "../../Assets/Projects/aruco-locating.jpg";
+import zwap from "../../Assets/Projects/zwap.png";
+import concreteCrackReconstruction from "../../Assets/Projects/ConcreteCrack.png";
 import user from "../../Assets/Projects/user.png";
 
 function Projects() {
@@ -26,7 +27,7 @@ function Projects() {
               description="A full stack vocabulary memorizing website. Featuring user authenticaion (Oauth) vocabularies collection management and a sliding vocabularies gallery."
               ghLink="https://github.com/Ching-Chieh-Wang/Leximind"
               demoLink="https://leximind-aj2c.onrender.com"
-              tags={["React", "Nodejs", "Nextjs", "Express", "Postgresql", "Redis"]}
+              tags={["React", "Nodejs", "Nextjs", "Express", "Postgresql", "Redis" , "AWS", "Docker"]}
             />
           </Col>
 
@@ -42,9 +43,21 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath="https://private-user-images.githubusercontent.com/81002444/269875721-a83f96b0-9a42-4e0e-bb17-f68a89bf1cb4.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTczNDExOTgsIm5iZiI6MTc1NzM0MDg5OCwicGF0aCI6Ii84MTAwMjQ0NC8yNjk4NzU3MjEtYTgzZjk2YjAtOWE0Mi00ZTBlLWJiMTctZjY4YTg5YmYxY2I0LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTA4VDE0MTQ1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIwYWU0NDhhMDRkOTZjYTU2NGZhOGYzNTQ3OWYxYjI2OGZmMjMwYTYyMzhmNWJmYWFkMzJmZGY2NjBiYzdhOGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.gZ59bllRULe_haxrKQoGhvgSfoYVr1gLjM3iqAs3WrA"
+              imgPath={zwap}
               isBlog={false}
-              title="Aruco label detection + Camera pose estimation"
+              title="Zwap - secondhand trading backend system"
+              description="This tool allows you to see the latest activities (like pushes, issues, stars, etc.) of any GitHub user directly in your terminal."
+              ghLink="https://github.com/Ching-Chieh-Wang/zwap"
+              // demoLink="https://editor.soumya-jit.tech/"
+              tags={["Spring", "Java", "Go", "MongoDB" , "Redis", "Kafka", "Jenkins", "Vault", "Firebase", "Linux", "Bash", "Elasticsearch"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={aruco_locating}
+              isBlog={false}
+              title="Camera pose estimation using Aruco marker image detection"
               description="A C++ Computer Vision application that real-time detects Aruco Label in image, and using the Aruco Label to estimate the position and the shooting angle of the capturing camera."
               ghLink="https://github.com/Ching-Chieh-Wang/aruco_locating"
               // demoLink="https://editor.soumya-jit.tech/"
@@ -54,27 +67,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={user}
+              imgPath={concreteCrackReconstruction}
               isBlog={false}
-              title="AI-Driven User Routing & Matching System"
-              description="A real-time user–interviewer routing system with FastAPI, MongoDB, and Elasticsearch, applying semantic embeddings (Ollama, Hugging Face) with KNN for dynamic project matching."
-              ghLink="https://github.com/XIUXIU25/user_research_web"
+              title="Concrete crack 3-D point cloud reconstruction using captured Aruco Marker"
+              description="A real-time concrete crack  reconstruction program. By using a camera"
+              ghLink="https://github.com/Ching-Chieh-Wang/aruco_crack_sfm"
               // demoLink="https://editor.soumya-jit.tech/"
-              tags={["FastAPI", "MongoDB", "Elasticsearch", "HuggingFace"]}
+              tags={["C++", "Python", "OpenCV", "Tensorflow"]}
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="GitHub User Activity"
-              description="This tool allows you to see the latest activities (like pushes, issues, stars, etc.) of any GitHub user directly in your terminal."
-              ghLink="https://github.com/XIUXIU25/github_activity"
-              // demoLink="https://editor.soumya-jit.tech/"
-              tags={["Python", "GitHub API"]}
-            />
-          </Col>
+
 
         </Row>
       </Container>
