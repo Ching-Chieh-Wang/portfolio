@@ -1,5 +1,3 @@
-// src/components/Projects/LeximindDetail.js
-
 import { Container, Row, Col } from "react-bootstrap";
 import leximind1 from "./leximind 1.png"
 import leximind2 from "./leximind 2.png"
@@ -14,6 +12,7 @@ function LeximindDetail() {
       <Container fluid style={{ paddingLeft: "60px", paddingRight: "60px" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
           <h1 style={{ fontSize: "3rem" }}>Leximind - Vocabulary Learning Platform</h1>
+          <a href="https://leximind-aj2c.onrender.com" style={{ fontSize: "1.25rem", color: "#61dafb", textDecoration: "none", display: "block", marginBottom: "10px" }}>🔗 Live Demo</a>
           <h4 style={{ fontSize: "1.5rem", lineHeight: "1.6" }}>
             A full-stack web application for efficient vocabulary memorization.
             Features user authentication (OAuth), personalized vocabulary
