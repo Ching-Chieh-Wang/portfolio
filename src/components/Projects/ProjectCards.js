@@ -71,6 +71,32 @@ function ProjectCards(props) {
               <span style={{ fontSize: "14px", fontWeight: "500" }}>Demo</span>
             </div>
           </li>}
+          {props.detailLink &&
+          <li className="social-icons" >
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <a
+                href={props.detailLink}
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: "44px",
+                  height: "44px",
+                  borderRadius: "50%",
+                  backgroundColor: "white",
+                  boxShadow: "0 2px 6px rgba(0,0,0,0.15)"
+                }}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24px" height="24px">
+                  <path d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 .875-.252 1.02-.598l.088-.416c.066-.299.176-.352.469-.288l.451.083.082-.38-2.29-.287zm-.812-2.29c-.287 0-.52-.233-.52-.52 0-.288.233-.52.52-.52.288 0 .52.232.52.52 0 .287-.232.52-.52.52z"/>
+                </svg>
+              </a>
+              <span style={{ fontSize: "14px", fontWeight: "500" }}>Detail</span>
+            </div>
+          </li>}
         </ul>
       </Card.Body>
     </Card>
