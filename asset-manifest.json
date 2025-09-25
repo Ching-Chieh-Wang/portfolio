@@ -1,28 +1,32 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bf240617.css",
-    "main.js": "/portfolio/static/js/main.644b58dc.js",
+    "main.js": "/portfolio/static/js/main.3260b0b2.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Matlab_Logo.png": "/portfolio/static/media/Matlab_Logo.a428337692440fa03467.png",
     "static/media/ConcreteCrack.png": "/portfolio/static/media/ConcreteCrack.9e7d4958c00c41dab8b7.png",
     "static/media/zwap.png": "/portfolio/static/media/zwap.b0cf5e10bc7f60afcb48.png",
+    "static/media/leximind 1.png": "/portfolio/static/media/leximind 1.0b17dbad470e91c75291.png",
+    "static/media/leximind 2.png": "/portfolio/static/media/leximind 2.d4e4e2b317bf5ee9f72c.png",
     "static/media/project-bg.jpg": "/portfolio/static/media/project-bg.ecbbeaa947f9df954740.jpg",
     "static/media/Leximind.png": "/portfolio/static/media/Leximind.52ede0c1c6be6a0c84cb.png",
     "static/media/youtube.png": "/portfolio/static/media/youtube.4cb597b3483fb78a35c5.png",
     "static/media/aruco-locating.jpg": "/portfolio/static/media/aruco-locating.863ae3b33bf0835d81b6.jpg",
-    "static/media/user.png": "/portfolio/static/media/user.57249179afa74d235806.png",
     "static/media/home-bg.jpg": "/portfolio/static/media/home-bg.964aa7fe8c2559bdd2c3.jpg",
+    "static/media/leximind 3.png": "/portfolio/static/media/leximind 3.5253136c771fa5ed5e6b.png",
     "static/media/home-main.png": "/portfolio/static/media/home-main.a87d9d36cbc3d7f6e9ae.png",
+    "static/media/leximind 5.png": "/portfolio/static/media/leximind 5.f1d7bbc1e37b1f0d7f56.png",
+    "static/media/leximind 4.png": "/portfolio/static/media/leximind 4.ddcb1d57349ccd125e34.png",
     "static/media/avatar.jpeg": "/portfolio/static/media/avatar.acea4f9e233b48475e9c.jpeg",
     "static/media/bash.png": "/portfolio/static/media/bash.a0d46e6cce62cd0e0697.png",
     "static/media/jenkins.png": "/portfolio/static/media/jenkins.a97af6807c801b7891b5.png",
     "index.html": "/portfolio/index.html",
     "main.bf240617.css.map": "/portfolio/static/css/main.bf240617.css.map",
-    "main.644b58dc.js.map": "/portfolio/static/js/main.644b58dc.js.map",
+    "main.3260b0b2.js.map": "/portfolio/static/js/main.3260b0b2.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf240617.css",
-    "static/js/main.644b58dc.js"
+    "static/js/main.3260b0b2.js"
   ]
 }
