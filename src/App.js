@@ -4,7 +4,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import LeximindDetail from "./components/Projects/detail/leximind/LeximindDetail";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate
@@ -17,7 +17,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
 
   return (
-    <Router basename="/portfolio">
+    <Router>
         <Navbar />
         <ScrollToTop />
         <Routes>
