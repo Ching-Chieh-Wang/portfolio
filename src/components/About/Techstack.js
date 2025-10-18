@@ -154,17 +154,17 @@ function Techstack() {
       </Row>
       <h2 className="purple">Badges</h2>
       <Row className="mb-4" style={{ justifyContent: "center" }}>
-        <Col xs={8} md={4} className="tech-icons">
+        <Col xs={12} md={6} className="tech-icons">
           <div
-            data-iframe-width="100%"
+            data-iframe-width="500"
             data-iframe-height="250"
             data-share-badge-id="989a4434-25a1-45b6-9376-473c86a46311"
             data-share-badge-host="https://www.credly.com"
           ></div>
         </Col>
-        <Col xs={8} md={4} className="tech-icons">
+        <Col  xs={12} md={6} className="tech-icons">
           <div
-            data-iframe-width="100%"
+            data-iframe-width="500"
             data-iframe-height="250"
             data-share-badge-id="4c3a14a2-3d46-4bbc-911b-7bbefbc79465"
             data-share-badge-host="https://www.credly.com"
