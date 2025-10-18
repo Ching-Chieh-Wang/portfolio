@@ -1,10 +1,17 @@
 import React from "react";
+import { useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import matlabLogo from "../../Assets/tools/Matlab_Logo.png";
 import bashLogo from "../../Assets/tools/bash.png";
 import jenkinsLogo from "../../Assets/tools/jenkins.png";
 
 function Techstack() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "//cdn.credly.com/assets/utilities/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
   return (
     <div style={{ padding: "50px" }}>
       <h2 className="purple">Languages</h2>
@@ -36,10 +43,10 @@ function Techstack() {
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <img alt="Matlab Logo" src={matlabLogo} style={{ width: "128px", height: "128px" }} />
+          <img alt="Matlab Logo" src={matlabLogo} style={{ width: "100%", height: "100%" }} />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <img alt="Bash Logo" src={bashLogo} style={{ width: "128px", height: "128px" }} />
+          <img alt="Bash Logo" src={bashLogo} style={{ width: "100%", height: "100%" }} />
         </Col>
       </Row>
 
@@ -115,7 +122,7 @@ function Techstack() {
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vault/vault-plain-wordmark.svg" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <img alt="Jenkins Logo" src={jenkinsLogo} style={{ width: "128px", height: "128px" }} />
+          <img alt="Jenkins Logo" src={jenkinsLogo} style={{ width: "100%", height: "100%" }} />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original-wordmark.svg" />
@@ -145,6 +152,26 @@ function Techstack() {
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg" />
         </Col>
       </Row>
+      <h2 className="purple">Badges</h2>
+      <Row className="mb-4" style={{ justifyContent: "center" }}>
+        <Col xs={8} md={4} className="tech-icons">
+          <div
+            data-iframe-width="100%"
+            data-iframe-height="250"
+            data-share-badge-id="989a4434-25a1-45b6-9376-473c86a46311"
+            data-share-badge-host="https://www.credly.com"
+          ></div>
+        </Col>
+        <Col xs={8} md={4} className="tech-icons">
+          <div
+            data-iframe-width="100%"
+            data-iframe-height="250"
+            data-share-badge-id="4c3a14a2-3d46-4bbc-911b-7bbefbc79465"
+            data-share-badge-host="https://www.credly.com"
+          ></div>
+        </Col>
+      </Row>
+      
     </div>
   );
 }

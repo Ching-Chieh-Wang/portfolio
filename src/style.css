@@ -554,7 +554,9 @@ button:focus {
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
-  display: table !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   box-shadow: 4px 5px 4px 3px rgba(7, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
