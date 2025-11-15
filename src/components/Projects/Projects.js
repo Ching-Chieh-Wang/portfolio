@@ -45,7 +45,7 @@ function Projects() {
               title="Zwap - Secondhand Trading Backend"
               description="A backend system that enables users to create, browse, and search secondhand products. Built with scalability to manage heavy concurrent product queries."
               ghLink="https://github.com/Ching-Chieh-Wang/zwap"
-              // demoLink="https://editor.soumya-jit.tech/"
+              detailLink="/project/zwap"
               tags={["Spring", "Java", "Go", "MongoDB" , "Redis", "Kafka", "Jenkins", "Vault", "Firebase", "Linux", "Bash", "Elasticsearch"]}
             />
           </Col>

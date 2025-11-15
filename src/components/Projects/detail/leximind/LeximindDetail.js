@@ -1,9 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
-import leximind1 from "./leximind 1.png"
-import leximind2 from "./leximind 2.png"
-import leximind3 from "./leximind 3.png"
-import leximind4 from "./leximind 4.png"
-import leximind5 from "./leximind 5.png"
+import leximind1 from "./../../../../Assets/Projects/leximind/leximind 1.png"
+import leximind2 from "./../../../../Assets/Projects/leximind/leximind 2.png"
+import leximind3 from "./../../../../Assets/Projects/leximind/leximind 3.png"
+import leximind4 from "./../../../../Assets/Projects/leximind/leximind 4.png"
+import leximind5 from "./../../../../Assets/Projects/leximind/leximind 5.png"
 
 
 function LeximindDetail() {

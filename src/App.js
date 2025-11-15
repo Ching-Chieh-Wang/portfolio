@@ -13,6 +13,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ZwapDetail from "./components/Projects/detail/zwap/ZwapDetail";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="project" element={<Projects />} />
           <Route path="about" element={<About />} />
           <Route path="project/leximind" element={<LeximindDetail />} />
+          <Route path="project/zwap" element={<ZwapDetail />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
     </Router>
