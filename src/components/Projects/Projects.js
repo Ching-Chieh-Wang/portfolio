@@ -1,10 +1,10 @@
 
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import youtube from "../../Assets/Projects/youtube.png";
-import leximind from "../../Assets/Projects/Leximind.png";
+import youtube from "../../Assets/Projects//youtube-clone/youtube.png";
+import leximind from "../../Assets/Projects/leximind/Leximind.png";
 import aruco_locating from "../../Assets/Projects/aruco-locating.jpg";
-import zwap from "../../Assets/Projects/zwap.png";
+import zwap from "../../Assets/Projects/zwap/zwap.png";
 import concreteCrackReconstruction from "../../Assets/Projects/ConcreteCrack.png";
 
 function Projects() {
@@ -35,6 +35,7 @@ function Projects() {
               imgPath={youtube}
               title="YouTube Clone - Video Sharing Platform"
               description="A scalable clone of YouTube with video uploading, processing, and playback. Implements low-resolution sampling to optimize cloud storage usage during high traffic."
+              detailLink="/project/youtube-clone"
               tags={["React", "Nodejs", "Nextjs", "Firebase", "GCP", "Docker"]}
             />
           </Col>

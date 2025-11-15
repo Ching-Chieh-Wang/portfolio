@@ -14,6 +14,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ZwapDetail from "./components/Projects/detail/zwap/ZwapDetail";
+import YoutubeCloneDetail from "./components/Projects/youtube-clone/youtubeCloneDetail";
 
 function App() {
 
@@ -25,8 +26,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="project" element={<Projects />} />
           <Route path="about" element={<About />} />
-          <Route path="project/leximind" element={<LeximindDetail />} />
-          <Route path="project/zwap" element={<ZwapDetail />} />
+          <Route path="project">
+            <Route path="leximind" element={<LeximindDetail />} />
+            <Route path="zwap" element={<ZwapDetail />} />
+            <Route path="youtube-clone" element={<YoutubeCloneDetail />} />
+          </Route>
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
     </Router>

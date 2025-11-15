@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import cdc from "../../../../Assets/Projects/zwap/cdc.png"
 import zwap from "../../../../Assets/Projects/zwap/zwap.png"
+import architech from "../../../../Assets/Projects/zwap/architect.png"
 
 function ZwapDetail() {
   return (
@@ -11,6 +12,11 @@ function ZwapDetail() {
           <h4 style={{ fontSize: "1.5rem", lineHeight: "1.6" }}>
             A microservice-based second‑hand trading platform that allows users to post products, browse items, and make purchases.
           </h4>
+          <img
+            src={zwap}
+            alt="CDC pipeline"
+            style={{ maxWidth: "400px", height: "auto", display: "block", margin: "0 auto", borderRadius: "12px" }}
+          />
 
 
           <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
@@ -36,7 +42,7 @@ function ZwapDetail() {
                 </ul>
               </div>
               <img
-                src={zwap}
+                src={architech}
                 alt="zwap system"
                 style={{ maxWidth: "1000px", height: "auto", display: "block", margin: "0 auto", borderRadius: "12px" }}
               />
